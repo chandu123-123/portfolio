@@ -1,30 +1,26 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import Typewriter from "react-typewriter-effect";
-
+"use client";
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
 const Typing = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
-    <div className='font-poppins'>
-      {isClient && (
-        <Typewriter
-          startDelay={100}
-          cursorColor="black"
-          multiText={[
-            "Hey, Chandan here.",
-            "I Build websites. ",
-            "And it's really cool!"
-          ]}
-          typeSpeed={100}
-          multiTextDelay={1000}
-          multiTextLoop={true}
-        />
-      )}
+    <div className="text-[0.7rem] px-2 text-center">
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          "Struggling to create a Resume for Companies as a ",
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          "Struggling to create a Resume for Companies as a Fresher",
+          // 1000,
+          // 'We produce food for Guinea Pigs',
+          // 1000,
+          // 'We produce food for Chinchillas',
+          1000,
+        ]}
+        wrapper="span"
+        speed={50}
+        style={{ fontSize: "2em", display: "inline-block" }}
+        repeat={Infinity}
+      />
     </div>
   );
 };

@@ -42,7 +42,7 @@ const page = () => {
           </div>
           <h1 className="flex-1  items-center text-[2rem] md:text-[4rem]">
             <h1 className="text-[1.5rem] tracking-widest">Full Stack <span style={{ color: 'blue' }}>Developer</span></h1>
-            <Typing></Typing>
+            {/* <Typing></Typing> */}
           </h1>
         </div>
         <div className="mt-[10rem] block" id="about">
