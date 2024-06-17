@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui"
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,6 +32,25 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwind-scrollbar'), // Add this line
+    require('tailwind-scrollbar'), 
+    daisyui,// Add this line
   ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          'primary': '#3490dc', // Example primary color
+          'secondary': '#ffed4a', // Example secondary color
+          'accent': '#38b2ac', // Example accent color
+          'neutral': '#2d3748', // Example neutral color
+          'base-100': '#ffffff', // Background color (white)
+          'base-content': '#000000', // Text color (black)
+          'info': '#3b82f6', // Example info color
+          'success': '#10b981', // Example success color
+          'warning': '#f59e0b', // Example warning color
+          'error': '#ef4444', // Example error color
+        },
+      },
+    ],
+  },
 };

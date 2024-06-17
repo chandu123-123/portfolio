@@ -8,6 +8,8 @@
 ::-webkit-scrollbar {
   display: none; /* Hide scrollbar for WebKit browsers */
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
 
   

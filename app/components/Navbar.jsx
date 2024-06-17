@@ -5,6 +5,7 @@ import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faInstagram,
+  faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"; // Import icons from brands library
 import Link from "next/link";
@@ -18,6 +19,12 @@ const Navbar = () => {
           <Link href="https://x.com/chandan_netha" target="_blank">
             <FontAwesomeIcon
               icon={faTwitter}
+              style={{ color: "gray" }}
+            ></FontAwesomeIcon>
+          </Link>
+          <Link href="https://www.linkedin.com/in/chandan-kumar-78738a253/" target="_blank">
+            <FontAwesomeIcon
+              icon={faLinkedin}
               style={{ color: "gray" }}
             ></FontAwesomeIcon>
           </Link>

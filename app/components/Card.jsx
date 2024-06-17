@@ -1,7 +1,12 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import Model from "./Model";
 
-const Card = ({photo,title,desc,link}) => {
+const Card = ({id,photo,title,desc,link}) => {
+  useEffect(()=>{
+
+  },[title])
   return (
     <div>
       <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-300 shadow-md bg-clip-border rounded-xl w-60">
@@ -22,10 +27,10 @@ const Card = ({photo,title,desc,link}) => {
           </p>
         </div>
        <div className="text-[0.8rem] pl-7 pb-7 ">
-        <button className="  bg-black p-3 text-white rounded-md">
 
-         <a href={link} target="_blank">Visit</a>
-        </button>
+ 
+         <Model id={id} titl={title} des={desc} lin={link} phot={photo}></Model>
+     
        </div>
       </div>
     </div>

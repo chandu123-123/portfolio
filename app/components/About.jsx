@@ -19,7 +19,7 @@ const About = () => {
             I&apos;m Chandan, currently pursuing my degree at CVR College with a
             notable CGPA of 9.1. As an IndieHacker, I specialize in developing
             websites and assisting others in creating impactful online
-            solutions. My preferred tech stack includes the MERN stack (MongoDB,
+            solutions. My preferred tech stack includes the<span style={{ color: 'blue' }}> MERN stack</span>  (MongoDB,
             Express.js, React, Node.js) with Next.js for building advanced
             React-based applications.
           </p>
