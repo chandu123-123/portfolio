@@ -40,12 +40,12 @@ const page = () => {
               height={100}
             ></Image>
           </div>
-          <h1 className="flex-1  items-center text-[2rem] md:text-[4rem]">
+          <div className="flex-1  items-center text-[2rem] md:text-[3rem] font-poppins">
             <h1 className="text-[1.5rem] tracking-widest">Full Stack <span style={{ color: 'blue' }}>Developer</span></h1>
-            {/* <Typing></Typing> */}
-          </h1>
+           <Typing></Typing>
+          </div>
         </div>
-        <div className="mt-[10rem] block" id="about">
+        <div className="mt-[6rem] block" id="about">
           <About></About>
         </div>
 
@@ -60,13 +60,19 @@ const page = () => {
           className=" flex flex-col justify-center items-center tracking-wider mt-20 gap-20 "
           id="projects"
         >
+          <div className="font-poppins text-[3rem] font-semibold my-10 flex flex-wrap text-center opacity-75 justify-center items-center">
+            <h1>
+
+          Working on <span style={{ color: 'blue' }} className="font-poppins text-[3rem] font-semibold"> shotstudy.com</span>
+            </h1>
+          </div>
           <h1 className="font-poppins text-[3rem] opacity-75">Projects</h1>
           <div className="overflow-x-auto max-w-full overflow-x-auto max-w-full scrollbar-none sm:scrollbar-thin sm:scrollbar-thumb-gray-600 sm:scrollbar-track-gray-100 ">
               <div className="flex gap-16 pb-10">
-                <Card id={"my_model_1"} photo={"/fresher.png"} title={"Resume Builder"} desc={"website to create resume especially for fresheres with very easy steps"} link={"https://www.fresheresume.com/"}/>
-                <Card id={"my_model_2"} photo={"/netflix.png"} title={"Netflix Clone"} desc={"A clone of netflix where i learned complete frontend with this project"} link={"https://myflix-zeta.vercel.app/login"}/>
-                <Card id={"my_model_3"} photo={"/auth.png"} title={"Crud Operations"} desc={"A complete auth based website with mongodb , involes every required operation"} link={"https://authentication-five-xi.vercel.app/"}/>
-                <Card id={"my_model_4"} photo={"/blog.png"} title={"Blogging"} desc={"A blogging website with crud opertions for my content creation"} link={"https://www.chandankumarnetha.in/blogs"}/>
+                <Card id={"my_model_1"} photo={"/fresher.png"} title={"Resume Builder"} desc={"website to create resume especially for fresheres with very easy steps, Built using Nextjs , redux and Razorpay payment Integration. Earned few Bucks through this site "} link={"https://www.fresheresume.com/"}/>
+                <Card id={"my_model_2"} photo={"/netflix.png"} title={"Netflix Clone"} desc={"A clone of netflix where i learned complete frontend with this project in my initial days ."} link={"https://myflix-zeta.vercel.app/login"}/>
+                <Card id={"my_model_3"} photo={"/auth.png"} title={"Crud Operations"} desc={"A complete auth based website with mongodb , involes every required operation for authentication "} link={"https://authentication-five-xi.vercel.app/"}/>
+                <Card id={"my_model_4"} photo={"/blog.png"} title={"Blogging"} desc={"A blogging website with crud opertions for my content creation to navigate my instagram and youtube followers to this site for links"} link={"https://www.chandankumarnetha.in/blogs"}/>
                 
                 {/* Add more Card components as needed */}
               </div>

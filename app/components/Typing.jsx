@@ -1,28 +1,19 @@
 "use client";
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
-const Typing = () => {
-  return (
-    <div className="text-[0.7rem] px-2 text-center">
-      <TypeAnimation
-        sequence={[
-          // Same substring at the start will only be typed out once, initially
-          "Struggling to create a Resume for Companies as a ",
-          1000, // wait 1s before replacing "Mice" with "Hamsters"
-          "Struggling to create a Resume for Companies as a Fresher",
-          // 1000,
-          // 'We produce food for Guinea Pigs',
-          // 1000,
-          // 'We produce food for Chinchillas',
-          1000,
-        ]}
-        wrapper="span"
-        speed={50}
-        style={{ fontSize: "2em", display: "inline-block" }}
-        repeat={Infinity}
-      />
-    </div>
-  );
-};
+import React from 'react';
+import Typewriter from 'typewriter-effect';
 
-export default Typing;
+const TypingAnimation = () => (
+  <Typewriter 
+    options={{
+      strings: ['Hey, I am Chandan', 'I Build Web Projects','Interested in Solving Problems','Working on shotstudy.com'],
+      autoStart: true,
+      loop: true,
+      cursor: '_',
+      delay: 50, // typing speed in milliseconds
+      deleteSpeed: 50 // speed of deleting characters
+    }}
+    
+  />
+);
+
+export default TypingAnimation;
