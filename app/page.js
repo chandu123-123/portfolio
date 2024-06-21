@@ -60,10 +60,10 @@ const page = () => {
           className=" flex flex-col justify-center items-center tracking-wider mt-20 gap-20 "
           id="projects"
         >
-          <div className="font-poppins text-[3rem] font-semibold my-10 flex flex-wrap text-center opacity-75 justify-center items-center">
+          <div className=" font-poppins text-[2rem] md:text-[3rem] font-semibold my-10 flex flex-wrap text-center opacity-75 justify-center items-center">
             <h1>
 
-          Working on <span style={{ color: 'blue' }} className="font-poppins text-[3rem] font-semibold"> shotstudy.com</span>
+          Working on <span style={{ color: 'blue' }} className="font-poppins text-[2rem] md:text-[3rem] font-semibold"> shotstudy.com</span>
             </h1>
           </div>
           <h1 className="font-poppins text-[3rem] opacity-75">Projects</h1>
