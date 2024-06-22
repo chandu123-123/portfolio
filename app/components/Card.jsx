@@ -14,6 +14,7 @@ const Card = ({id,photo,title,desc,link}) => {
           <img
             src={photo}
             alt="card-image"
+            loading="lazy"
             className="drop-shadow-xl"
           />
         </div>

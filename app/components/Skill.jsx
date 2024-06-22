@@ -77,7 +77,7 @@ const InfiniteScroll = () => {
        
       {images2.map((image, index) => (
           <div key={index} style={{ margin: '15px', textAlign: 'center' }}>
-            <img src={image} alt={`Slide ${index}`} style={{ width: '150px', height:'100px', display: 'inline-block' }} />
+            <img src={image} alt={`Slide ${index}`} loading="lazy" style={{ width: '150px', height:'100px', display: 'inline-block' }} />
           </div>
         ))}
        

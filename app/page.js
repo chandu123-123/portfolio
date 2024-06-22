@@ -35,6 +35,7 @@ const page = () => {
         >
           <div className="flex justify-center flex-1 items-center">
             <Image
+            loading="lazy"
               src="/my.jpg"
               width={300}
               className="flex mt-10 md:mt-0 justify-center rounded-full drop-shadow-xl"

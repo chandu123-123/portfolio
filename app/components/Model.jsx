@@ -17,7 +17,7 @@ const Model = ({id,titl,des,phot,lin}) => {
 <div className="modal text-black" role="dialog">
   <div className="modal-box flex flex-col justify-center items-center gap-10">
     <h3 className="font-bold text-lg">{titl}</h3>
-    <Image src={phot} width={300} height={300}></Image>
+    <Image src={phot} width={300} height={300} loading="lazy"></Image>
     <p className="py-4">{des}</p>
     <Link href={lin} target='_blank'>Vist</Link>
     <div className="modal-action">
