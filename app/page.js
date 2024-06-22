@@ -7,6 +7,7 @@ import Image from "next/image";
 import Model from "./components/Model";
 import Typing from "./components/Typing";
 import Contact from "./components/Contact";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -66,7 +67,7 @@ const page = () => {
           <div className=" font-poppins text-[2rem] md:text-[3rem] font-semibold my-10 flex flex-wrap text-center opacity-75 justify-center items-center">
             <h1>
 
-          Working on <span style={{ color: 'blue' }} className="font-poppins text-[2rem] md:text-[3rem] font-semibold"> shotstudy.com</span>
+          Working on <span style={{ color: 'blue' }} className="font-poppins text-[2rem] md:text-[3rem] font-semibold"><Link href="https://shotstudy.com" target="_blank"> shotstudy.com</Link></span>
             </h1>
           </div>
           <h1 className="font-poppins text-[3rem] opacity-75">Projects</h1>
