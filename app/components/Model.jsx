@@ -19,7 +19,7 @@ const Model = ({id,titl,des,phot,lin}) => {
     <h3 className="font-bold text-lg">{titl}</h3>
     <Image src={phot} width={300} height={300} loading="lazy"></Image>
     <p className="py-4">{des}</p>
-    <Link href={lin} target='_blank'>Vist</Link>
+    <Link href={lin} target='_blank'>Visit</Link>
     <div className="modal-action">
       <label htmlFor={id} className="btn">Close!</label>
     </div>

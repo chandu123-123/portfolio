@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBars ,faTimes} from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faInstagram,
@@ -64,7 +64,7 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#skills">skills</a>
+            <a href="#skills">Skills</a>
           </li>
         </div>
         <div className="visible sm:hidden">
@@ -79,7 +79,9 @@ const Navbar = () => {
           )}
         </div>
         {open && (
+          
           <div className="absolute  w-screen h-screen list-none center text-center  flex flex-col  justify-center items-center  opacity-95 inset-0 backdrop-blur-md font-poppins bg-white">
+          
             <div>
               <li className="p-1">
                 <a href="#home" onClick={()=>{setopen(false)}} >Home</a>
@@ -91,11 +93,21 @@ const Navbar = () => {
                 <a href="#projects" onClick={()=>{setopen(false)}}>Projects</a>
               </li>
               <li className="p-1">
-                <a href="#skills" onClick={()=>{setopen(false)}}>skills</a>
+                <a href="#skills" onClick={()=>{setopen(false)}}>Skills</a>
               </li>
             </div>
           </div>
         )}
+        {
+          open && (
+            <div className="z-30 hover:scale-150 " onClick={()=>{setopen(false)}}>
+                 <FontAwesomeIcon
+              icon={faTimes}
+              style={{ color: "gray" }}
+            ></FontAwesomeIcon>
+            </div>
+          )
+        }
       </div>
     </div>
   );
