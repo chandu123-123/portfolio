@@ -31,7 +31,7 @@ const About = () => {
             insights with a community of{" "}
             <span class="highlight">50,000 followers</span>, and on <span style={{ color: 'blue' }}> Youtube</span>,
             where my channel reaches{" "}
-            <span class="highlight">28,000 subscribers</span>. My content covers
+            <span class="highlight">28,000 subscribers</span> My first  <span style={{ color: 'blue' }}> Saas</span>, Fresheresume.com , earned few bucks through this . My content covers 
             topics ranging from AI to B.Tech studies, projects, and career
             placements.
           </p>

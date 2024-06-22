@@ -40,9 +40,12 @@ const page = () => {
               height={100}
             ></Image>
           </div>
-          <div className="flex-1  items-center text-[2rem] md:text-[3rem] font-poppins">
+          <div className="flex-1 gap-10 items-center text-[1.4rem]  md:text-[3rem] font-poppins">
             <h1 className="text-[1.5rem] tracking-widest">Full Stack <span style={{ color: 'blue' }}>Developer</span></h1>
+            <div className="mt-5 md:mt-0">
+
            <Typing></Typing>
+            </div>
           </div>
         </div>
         <div className="mt-[6rem] block" id="about">

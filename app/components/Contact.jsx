@@ -9,6 +9,7 @@ import {
   faInstagram,
   faLinkedin,
   faYoutube,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons"; 
 const Contact = () => {
   return (
@@ -54,12 +55,19 @@ const Contact = () => {
               style={{ color: "gray" }}
             ></FontAwesomeIcon>
           </Link>
+          <Link href="https://github.com/chandu123-123" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{ color: "gray" }}
+            ></FontAwesomeIcon>
+          </Link>
           <Link href="mailto:chandankumarnetha@gmail.com" target="_blank">
             <FontAwesomeIcon
               icon={faEnvelope}
               style={{ color: "gray" }}
             ></FontAwesomeIcon>
           </Link>
+         
         </div>
         <p className='flex justify-center items-center pb-8 text-center'>&copy; Designed and Developed by Chandan Kumar Netha</p>
     </div>

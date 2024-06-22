@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 const TypingAnimation = () => (
   <Typewriter 
     options={{
-      strings: ['Hey, I am Chandan', 'I Build Web Projects','Interested in Solving Problems','Working on shotstudy.com'],
+      strings: ['Hey, I am Chandan', 'I Build Websites','Interested in Problem Solving','Working on shotstudy.com'],
       autoStart: true,
       loop: true,
       cursor: '_',
